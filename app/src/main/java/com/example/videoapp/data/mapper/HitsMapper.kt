@@ -8,30 +8,6 @@ import com.example.videoapp.domain.entity.Video
 import kotlin.math.abs
 
 
-/*
-fun HitsDto.toEntity(): Video {
-    val bestVariant = this.videos.bestVariant()
-    val topTags = this.tags.split(",").map { it.trim() }.take(3).joinToString(" ")
-    return Video(
-        id = this.id,
-        tags = topTags,
-        duration = this.duration,
-        url = bestVariant.url,
-        thumbnail = bestVariant.thumbnail
-    )
-}
-fun PixabayVideoDto.toEntity(): List<Video> {
-    return hits.map { it.toEntity() }
-}
-
-
-fun VideosDto.bestVariant(targetWidth: Int = 1920, targetHeight: Int = 1080): VideoVariantDto {
-    val variants = listOf(large, medium, small, tiny)
-    return variants.minByOrNull { variant ->
-        abs(variant.width - targetWidth) + abs(variant.height - targetHeight)
-    }!!
-}
-*/
 
 
 fun List<VideosDto>.bestVariant(targetWidth: Int = 1920, targetHeight: Int = 1080): VideosDto {

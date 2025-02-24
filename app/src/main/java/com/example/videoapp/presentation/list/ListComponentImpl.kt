@@ -12,7 +12,6 @@ import dagger.assisted.AssistedInject
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
-import javax.inject.Inject
 
 class ListComponentImpl @AssistedInject constructor(
     private val listStoreFactory: ListStoreFactory,
