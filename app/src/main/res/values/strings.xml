@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">VideoApp</string>
+    <string name="initial_state">Начальное состояние</string>
+    <string name="error">Ошибка загрузки видео. Проверьте подключение к интернету либо измените страну подключения.</string>
+</resources>
