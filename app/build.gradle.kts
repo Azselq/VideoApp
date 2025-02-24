@@ -18,7 +18,12 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
+
+        val key = property("apikey")?.toString() ?: error("Добавьте apikey в gradle.properties")
+        buildConfigField("String","VIDEO_API_KEY", "\"$key\"")
     }
+
 
     buildTypes {
         release {

@@ -1,16 +1,18 @@
 package com.example.videoapp.data.network.api
 
+import com.example.videoapp.BuildConfig
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 object ApiFactory {
+
+
     private const val BASE_URL = "https://api.pexels.com/"
 
     private val client = OkHttpClient.Builder()
         .addInterceptor { chain ->
             val request = chain.request().newBuilder()
-                // Добавляем API-ключ в заголовок запроса
-                .addHeader("Authorization", "uYKJfk2tDI4kVgzAxf5n5yeq6gV2mKMkmAy1NX4nfFhqQC9kpEceXxL6")
+                .addHeader("Authorization",  BuildConfig.VIDEO_API_KEY)
                 .build()
             chain.proceed(request)
         }
