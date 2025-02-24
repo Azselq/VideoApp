@@ -5,7 +5,7 @@
 
 ## Инструкция по запуску проекта
 
-1. Для взаимодействия приложения с [Pexels Api]([https://pixabay.com/api/docs/](https://www.pexels.com/api/documentation/)), нужен ключ доступа который можно получить по 
+1. Для взаимодействия приложения с [Pexels Api](https://www.pexels.com/api/documentation/), нужен ключ доступа который можно получить по 
 [ссылке](https://www.pexels.com/api/)
 
 2. В файл gradle.properties необходимо добавить apikey в формате
