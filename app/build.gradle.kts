@@ -58,6 +58,7 @@ dependencies {
     implementation(libs.androidx.material3)
     implementation(libs.androidx.media3.exoplayer)
     implementation(libs.androidx.media3.ui)
+    implementation(libs.androidx.ui.test.android)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -80,6 +81,8 @@ dependencies {
     ksp(libs.room.compiler)
     ksp(libs.dagger.compiler)
     implementation (libs.accompanist.swiperefresh)
+    testImplementation(libs.mockito.core)
+    testImplementation(libs.mockito.kotlin)
 
 
 }
